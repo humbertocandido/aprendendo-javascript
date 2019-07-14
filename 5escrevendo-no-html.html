@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escrevendo no Html</title>
+</head>
+<body>
+    <h1>Escrevendo no documento Html!</h1>
+    <script>
+        // Pegando uma entrada de usuário e colocando em uma variável para manipular posteriormente
+        var nome = window.prompt("Digite o seu nome:")
+        // Adicionando uma linha ao documento html, utilizando o método lenght para contar quantas letras uma String tem
+        document.writeln(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br/>`)
+        // Adicionando uma linha ao documento html, utilizando o método toLocaleUpperCase para deixar todas as letras maiúsculas
+        document.writeln(`Seu nome com todas as letras maiúsculas ${nome.toLocaleUpperCase()} <br/>`)
+        // Adicionando uma linha ao documento html, utilizando o método toLocaleLowerCase para deixar todas as letras minúsculas
+        document.writeln(`Seu nome com todas as letras minúsculas ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
