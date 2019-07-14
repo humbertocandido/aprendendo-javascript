@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Capturando valores e armazenado em variáveis
+        var valor1 = window.prompt("Digite o primeiro valor:")
+        var valor2 = window.prompt("Digite o segundo valor:")
+        /*Como usamos o sinal de "+" para concatenação e os tipo de dados são capturados como texto,
+        ao tentarmos fazer a operação matemática de somar dois valores obteremos uma string nova
+        com os valores enfileirados*/
+        var soma = valor1 + valor2 
+        window.alert("Tentando somar os valores em forma de texto " + soma)
+        /*convertendo os valores obtidos em forma de texto em dados do tipo Number podemos somar eles*/
+        valor1 = Number(valor1) 
+        valor2 = Number(valor2)
+        soma = valor1 + valor2 
+        window.alert("Somando os valores convertidos de String para Number \n" +
+        `O resultado de ${valor1} + ${valor2} = ${soma}`)
+        //Fazendo a conversão de Number para String
+        console.log(typeof valor1) // Number
+        valor1 = valor1.toString() // Podemos utilizar "String(valor1)" também
+        console.log(typeof valor1)// String
+    </script>
+</body>
+</html>
