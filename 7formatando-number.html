@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formatando Números</title>
+</head>
+<body>
+    
+    <script>
+        var numero = 1333.9
+        var formatada = numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        // Formatando o número para mostrar duas casas decimais
+        console.log(numero.toFixed(2))
+        // Formatando o número para mostrar duas casas decimais e trocando o ponto que separa a casa decimal por vírgula
+        console.log(numero.toFixed(2).replace(".",","))
+        // Formatando o número para mostrar em formato da moeda local 
+        console.log(numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        document.write(formatada)
+    </script>
+</body>
+</html>

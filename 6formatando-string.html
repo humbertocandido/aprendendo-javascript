@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formatando String</title>
+</head>
+<body>
+    <h1 id="texto">Esse é o texto que vai ser FORMATADO!</h1>
+    <script>
+        /*
+        - pegando o texto de uma tag h1 com id="texto"
+        - formatando toda a string para letras maiúsculas e escrevendo no html
+        - formatando toda a string para letras minúsculas e escrevendo no html
+        */
+
+        var texto = document.getElementById("texto").innerText
+        document.writeln(texto.toUpperCase()+"<br/>")
+        document.writeln(texto.toLowerCase())
+        
+    </script>
+</body>
+</html>
